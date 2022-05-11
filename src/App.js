@@ -11,7 +11,19 @@ function App() {
             col 3 of 4
           </div>
           <div className = "col-1-of-4">
-            col 1 of 4
+            <div className = "link-container">
+              <ul className ="links">
+                <li>
+                  <a href="#"> nft</a>
+                </li>
+                <li>
+                  <a href="#"> .wav</a>
+                </li>
+                <li>
+                  <a href ="#"> etc.</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
