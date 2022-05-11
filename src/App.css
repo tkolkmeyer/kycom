@@ -60,7 +60,10 @@ body{
 }
 
 .link-container ul {
-  display: inline-block;
+  
+  display: inline;
+  list-style: none;
+
 }
 
 
@@ -93,8 +96,25 @@ body{
 
 /* footer */
 
+.link-container-2 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.link-container-2 ul {
+  display: inline;
+}
+.link-container-2 li {
+  display: inline;
+}
+
 .footer {
   position: absolute;
-  top: 90%
-  
+  bottom: 0%;
+  background-color: rgb(148, 148, 148);
+  width: 100%;
+  height: max-content;
 }

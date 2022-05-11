@@ -7,9 +7,11 @@ function App() {
 
       <section className = 'section1'>
         <div className = "row">
+          
           <div className = "col-3-of-4">
             col 3 of 4
           </div>
+          
           <div className = "col-1-of-4">
             <div className = "link-container">
               <ul className ="links">
@@ -25,6 +27,7 @@ function App() {
               </ul>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -40,7 +43,22 @@ function App() {
       
 
         <div className='footer'>
-          this is the footer 
+     
+
+          <div className = "link-container-2">
+            <ul className ="links">
+              <li>
+                <a href="#"> twitter</a>
+              </li>
+              <li>
+                <a href="#"> youtube</a>
+              </li>
+              <li>
+                <a href ="#"> instagram </a>
+              </li>
+            </ul>
+          </div>
+
 
         </div>
       </section>
