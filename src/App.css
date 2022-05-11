@@ -1,11 +1,37 @@
 body{
   background-color: rgb(133, 133, 133);
+  overflow: hidden;
+}
+
+
+
+
+.mainHome { 
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  
+}
+
+.mainHome::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.mainHome section {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
 }
 
 .section1{
   height: 100vh;
-
+  
 }
+
+
 
 .row{
 
@@ -36,6 +62,7 @@ body{
  
   max-height: 100vh;
   background-color: blue;
+  
   height: 100vh;
   position: relative;
 }

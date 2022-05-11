@@ -5,7 +5,7 @@ function App() {
   return (
     <div className='mainHome'>
 
-      <div className = 'section1'>
+      <section className = 'section1'>
         <div className = "row">
           <div className = "col-3-of-4">
             col 3 of 4
@@ -14,11 +14,11 @@ function App() {
             col 1 of 4
           </div>
         </div>
-      </div>
+      </section>
 
 
 
-      <div className= "section2">
+      <section className= "section2">
         this is section2
         
         <div className = "video">
@@ -31,7 +31,8 @@ function App() {
           this is the footer 
 
         </div>
-      </div>
+      </section>
+
     </div>
     
 
