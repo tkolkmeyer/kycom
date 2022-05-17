@@ -196,29 +196,44 @@ body{
 
 
 @media screen and (min-width: 1024px) {
-    /* desktop view */
-    .section2{
-      background-color: brown;
-    }
+  /* desktop view */
+  .section2{
+    background-color: brown;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  .wrapper{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 715px) {
-    /* mobile portrait */
+  
+  /* mobile portrait & landscape */
     
 
-    .nav-moblie {
-      display: block;
-    }
+  .menu-btn {
+    display: block;
+  }
+  .wrapper{
+    display: block;
+  }
 
-    .section2 {
-      background-color: chartreuse;
-    }
-    .col-3-of-4{
-      width: 100%;
-      background-color: aqua;
-    }
+  .section2 {
+    background-color: chartreuse;
+  }
+  .col-3-of-4{
+    width: 100%;
+    background-color: aqua;
+  }
 
-    .col-1-of-4{
-      display: none;
-    }
+  .col-1-of-4{
+    display: none;
+  }
+
+
+
 }
