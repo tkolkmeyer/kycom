@@ -10,6 +10,7 @@ function App() {
       
       <input class="menu-btn" id="active" type="checkbox"></input>
       
+      
       <div class="wrapper">
         <ul class = "menu">
           <li> <a href="#">NFT</a></li>
