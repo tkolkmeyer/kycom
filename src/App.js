@@ -1,92 +1,47 @@
 
 import './App.css';
-
-function App() {
-  return (
-    <div className='mainHome'>
-
-
-      {/** mobile nav */}
-      
-      <input class="menu-btn" id="active" type="checkbox"></input>
-      
-      
-      <div class="wrapper">
-        <ul class = "menu">
-          <li> <a href="#">NFT</a></li>
-          <li> <a href="#">.Wav</a></li>
-          <li> <a href="#">Etc.</a></li>
-        </ul>
-      </div>
-      
-      
-
-      {/** main conent */}
-      <section className = 'section1'>
-        <div className = "row">
-          
-          <div className = "col-3-of-4">
-            col 3 of 4
-          </div>
-          
-          <div className = "col-1-of-4">
-            <div className = "link-container">
-              <ul className ="links">
-                <li>
-                  <a href="#"> nft</a>
-                </li>
-                <li>
-                  <a href="#"> .wav</a>
-                </li>
-                <li>
-                  <a href ="#"> etc.</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </section>
+import React from 'react';
+import SlideRoutes from 'react-slide-routes';
+import { Route, NavLink } from 'react-router-dom';
+import Home from "./Home/home.js";
+import NftPage from './NFT/NFT.js';
+import Wav from './Wav/Wav.js';
+import Etc from './Etc/etc';
 
 
 
-      <section className= "section2">
-        this is section2
+const About = () => <div className="card about">About</div>;
+const Contact = () => <div className="card contact">Contact</div>;
+
+const App = () => (
+  <>
+
+    {/** mobile nav */}
         
-        <div className = "video">
-
-        </div>
-      
+    <input class="menu-btn" id="active" type="checkbox"></input>
         
-               
-        <div className='footer'>
-     
-
-          <div className = "link-container-2">
-            <ul className ="links">
-              <li>
-                <a href="#"> twitter</a>
-              </li>
-              <li>
-                <a href="#"> youtube</a>
-              </li>
-              <li>
-                <a href ="#"> instagram </a>
-              </li>
-            </ul>
-          </div>
-
-
+        
+        <div class="wrapper">
+          <ul class = "menu">
+            <NavLink to="/" end> <li> Home </li> </NavLink>
+            <NavLink to="nftPage" end> <li> NFT </li> </NavLink>
+            <NavLink to="wav" end> <li> .Wav </li> </NavLink>
+            <NavLink to="etc" end> <li> Etc </li> </NavLink>
+          </ul>
         </div>
         
-      </section>
+        
+  
+        {/** main conent */}
 
-    </div>
-    
-
-
- 
-  );
-}
+    <SlideRoutes>
+      <Route path="/" element={<Home />} />
+      <Route path="nftPage" element={<NftPage />} />
+      <Route path="wav" element={<Wav />} />
+      <Route path="etc" element={<Etc />} />
+      
+    </SlideRoutes>
+  </>
+);
 
 export default App;

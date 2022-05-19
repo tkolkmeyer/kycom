@@ -1,21 +1,15 @@
-export default function Lome() {
-    return (
+import './Home.css';
+
+
+export default function Home() {
+    
+  return (
         
         <div className='mainHome'>
 
 
         {/** mobile nav */}
         
-        <input class="menu-btn" id="active" type="checkbox"></input>
-        
-        
-        <div class="wrapper">
-          <ul class = "menu">
-            <li> <a href="#">NFT</a></li>
-            <li> <a href="#">.Wav</a></li>
-            <li> <a href="#">Etc.</a></li>
-          </ul>
-        </div>
         
         
   
