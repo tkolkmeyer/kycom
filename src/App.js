@@ -10,38 +10,43 @@ import Etc from './Etc/etc';
 
 
 
-const About = () => <div className="card about">About</div>;
-const Contact = () => <div className="card contact">Contact</div>;
 
-const App = () => (
-  <>
+const App  = () => {
 
-    {/** mobile nav */}
-        
-    <input class="menu-btn" id="active" type="checkbox"></input>
-        
-        
-        <div class="wrapper">
-          <ul class = "menu">
-            <NavLink to="/" end> <li> Home </li> </NavLink>
-            <NavLink to="nftPage" end> <li> NFT </li> </NavLink>
-            <NavLink to="wav" end> <li> .Wav </li> </NavLink>
-            <NavLink to="etc" end> <li> Etc </li> </NavLink>
-          </ul>
-        </div>
-        
-        
+  function hi(){
+    
+  }
   
-        {/** main conent */}
+  return(
+    <>
 
-    <SlideRoutes>
-      <Route path="/" element={<Home />} />
-      <Route path="nftPage" element={<NftPage />} />
-      <Route path="wav" element={<Wav />} />
-      <Route path="etc" element={<Etc />} />
-      
-    </SlideRoutes>
-  </>
-);
+      {/** mobile nav */}
+          
+      <input class="menu-btn" id="active" type="checkbox"></input>
+          
+          
+          <div class="wrapper">
+            <ul class = "menu">
+              <NavLink to="/" end> <li class="menuItem"> Home </li> </NavLink>
+              <NavLink to="nftPage" end> <li class="menuItem"> NFT </li> </NavLink>
+              <NavLink to="wav" end> <li class="menuItem"> .Wav </li> </NavLink>
+              <NavLink to="etc" end> <li class="menuItem"> Etc </li> </NavLink>
+            </ul>
+          </div>
+    
+
+      <SlideRoutes>
+        <Route path="/" element={<Home />} />
+        <Route path="nftPage" element={<NftPage />} />
+        <Route path="wav" element={<Wav />} />
+        <Route path="etc" element={<Etc />} />
+        
+      </SlideRoutes>
+    
+    </>
+  );
+};
 
 export default App;
+
+

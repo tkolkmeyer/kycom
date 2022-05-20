@@ -40,36 +40,4 @@
 
 
 
-
-.wrapper ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 500;
-  padding: 5px 50px;
-  position: relative;
-}
-
-
-.wrapper ul li a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: #fff;
-  border-radius: 50px;
-  transform: scaleY(0);
-  transition: transform 0.3s ease-in;
-  z-index: 1;
-}
-
-.wrapper ul li a:hover:after {
-  transform: scaleY(1);
-}
-
-.wrapper ul li a:hover {
-  color: #c850
-}
-
 /* hamburger nav */
