@@ -4,6 +4,10 @@
    
 }
 
+.sliderContainer {
+    height: 100%;
+}
+
 
 .rowNft{
 
@@ -55,4 +59,8 @@
     height: 83vh;
     background-color: chocolate;
     margin: 9vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
