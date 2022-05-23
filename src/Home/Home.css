@@ -15,7 +15,7 @@ body{
   height: 100vh;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
-  
+  scroll-behavior: smooth;
 }
 
 .mainHome::-webkit-scrollbar {
@@ -33,6 +33,30 @@ body{
 .section1{
   height: 100vh;
   
+}
+
+.home__button--scrollSectionOne {
+  position: absolute;
+  right:35px;
+  top: 75px;
+  z-index: 2;
+  text-align: center;
+  line-height: 50px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.home__button--scrollSectionTwo {
+  position: absolute;
+  right:35px;
+  top: 100px;
+  z-index: 2;
+  text-align: center;
+  line-height: 50px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 
